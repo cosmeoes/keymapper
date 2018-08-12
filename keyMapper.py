@@ -1,4 +1,4 @@
-import keyboard, configparser, subprocess
+import keyboard, configparser, subprocess, time
 from os import path
 config = configparser.ConfigParser()
 config.read("keyMapper.conf")
@@ -28,8 +28,8 @@ for key, value in config['Scripts'].items():
     dir = None
     if(path.dirname(args[0]) and path.isdir(path.dirname(args[0]))):
         dir = path.dirname(args[0])
-    keyboard.add_hotkey(key, exec_command, args=[value, dir])
+    keyboard.add_hotkey(key, exec_command, args=[value, dir], suppress=True)
 
 
 while(True):
-    pass
+    time.sleep(0.1)
