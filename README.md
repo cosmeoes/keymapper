@@ -1,6 +1,17 @@
 # keyMapper
 A python script to map keys to scripts other keys or typing
 
+## Installation
+To install just download or clone the repo with:
+```
+git clone https://github.com/cosmeoes/keymapper.git
+```
+then install the dependencies running:
+```
+pip install -r requirements.txt
+```
+if you don't want to use pip you can find the repositories for the dependencies in the [dependencies section](#dependencies) and install them as you want.
+
 ## Configuration
 The configurations can be found and edited in the keyMapper.conf file.
 This file is separated in three sections mapping, hotkey and scripts.
