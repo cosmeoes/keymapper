@@ -2,7 +2,9 @@
 A python script to map keys to scripts other keys or typing
 
 ## Installation
-To install just download or clone the repo with:
+Make sure you have python 3 installed first, you can find it [here](https://www.python.org/downloads/).
+
+Next you just have to download or clone the repo with:
 ```
 git clone https://github.com/cosmeoes/keymapper.git
 ```
@@ -12,8 +14,28 @@ pip install -r requirements.txt
 ```
 if you don't want to use pip you can find the repositories for the dependencies in the [dependencies section](#dependencies) and install them as you want.
 
+# Usage 
+To use this script just run the keyMapper.pyw file, if you have python installed must likely it double clicking on it will run it, but you can also run it from the command prompt using:
+```
+python keyMapper.pyw
+```
+When you run the file a small keyboard icon should appear on your tray bar like this one:
+
+![Tray icon image](img/keyMapper_tray.png)
+
+If you right clik on it this menu should appear: 
+
+![Tray icon image](img/keyMapper_tray_options.png)
+
+Here you have two options, exit and Reload Config, this are pretty straightforward:
+- **Reload config:** Reloads the configuration file, you should clik this option every time you change the configuaration file when the script's already running, so you don't have to stop it and run it again every time you change the configuaration file.
+- **Exit:** This just stops the script, so your keys should now have their default beheavor.
+
+And that's it, now you can start tweaking the configuration file.
+
 ## Configuration
 The configurations can be found and edited in the keyMapper.conf file.
+
 This file is separated in three sections mapping, hotkey and scripts.
 
 #### Mapping
