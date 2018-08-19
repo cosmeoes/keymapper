@@ -1,9 +1,23 @@
-import keyboard, configparser, subprocess, time, sys
-from os import path
+import keyboard
 from configManager import load_config
+from pystray import MenuItem as item
+import pystray
+from PIL import Image
+CONFIG_PATH = "keyMapper.conf"
 
-load_config("keyMapper.conf")
+load_config(CONFIG_PATH)
 
 
-while(True):
-    time.sleep(10000)
+def reload_config():
+    keyboard.unhook_all()
+    load_config(CONFIG_PATH)
+    pass
+
+image = Image.open("img/keyboard.png")
+menu = [item('Reload Config',lambda: reload_config()), item('Exit', lambda: icon.stop())]
+icon = pystray.Icon("keyMaper", image, "keyMaper", menu)
+
+def setup(icon):
+    icon.visible = True
+
+icon.run(setup)
