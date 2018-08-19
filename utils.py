@@ -22,7 +22,7 @@ def set_script(target, action):
     dir = None
     if(path.dirname(args[0]) and path.isdir(path.dirname(args[0]))):
         dir = path.dirname(args[0])
-        logger.info("Script path for %s set to %s" % (args[0], path))
+        logger.info("Script path for %s set to %s" % (args[0], dir))
     return keyboard.add_hotkey(target, exec_command, args=[action, dir], suppress=True)
 
 
