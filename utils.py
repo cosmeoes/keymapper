@@ -15,6 +15,7 @@ def set_script(target, action):
         dir = path.dirname(args[0])
     return keyboard.add_hotkey(target, exec_command, args=[action, dir], suppress=True)
 
+
 def exec_command(value, dir):
     print("doing %s in %s" % (value, dir))
     args = value.split(',')
