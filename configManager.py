@@ -17,7 +17,7 @@ def load_scripts(scripts_dict):
 
 def load_config(file_path):
     config = configparser.ConfigParser()
-    config.read("keyMapper.conf") #TODO: change this to file_path
+    config.read(file_path)
     if("Mapping" in config):
         load_mappings(config['Mapping'])
     if("Hotkey" in config):
