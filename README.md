@@ -15,7 +15,7 @@ pip install -r requirements.txt
 if you don't want to use pip you can find the repositories for the dependencies in the [dependencies section](#dependencies) and install them as you want.
 
 # Usage 
-To use this script just run the keyMapper.pyw file, if you have python installed must likely it double clicking on it will run it, but you can also run it from the command prompt using:
+To use this script just run the keyMapper.pyw file, if you have python installed double clicking on it should run it, but you can also run it from the command prompt using:
 ```
 python keyMapper.pyw
 ```
@@ -39,7 +39,7 @@ The configurations can be found and edited in the keyMapper.conf file.
 This file is separated in three sections mapping, hotkey and scripts.
 
 #### Mapping
-Here you put keys you want to bind to other keys, for example, if you want o bind the "a" key to write a "b"
+Here you put keys you want to bind to other keys, for example, if you want to bind the "a" key to write a "b"
 when you press it you would do:
 ```
 [Mapping]
