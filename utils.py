@@ -5,7 +5,7 @@ import logging
 logger = logging.getLogger();
 
 def set_key_map(target, replacement):
-    if len(keyboard.key_to_scan_codes(target, error_if_missing=False)) > 0 and len(keyboard.key_to_scan_codes(value, error_if_missing=False) > 0):
+    if len(keyboard.key_to_scan_codes(target, error_if_missing=False)) > 0 and len(keyboard.key_to_scan_codes(replacement, error_if_missing=False) > 0):
         logger.info("mapping %s to %s" % (target, value))
         f = lambda event: keyboard.send(replacement) if event.event_type == keyboard.KEY_DOWN else None
         return keyboard.hook_key(target, f, suppress=True)
